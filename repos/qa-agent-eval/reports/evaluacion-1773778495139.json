@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-03-17T20:14:55.139Z",
+  "agente_endpoint": "http://localhost:3000/api/agent/chat",
+  "configuracion": {
+    "turnos": 2,
+    "personas": [
+      "carlos",
+      "maria"
+    ]
+  },
+  "resumen": {
+    "total": 2,
+    "aprobados": 0,
+    "reprobados": 2,
+    "promedio_general": "3.3"
+  },
+  "scorecards": [
+    {
+      "persona": "carlos",
+      "fecha": "2026-03-17T20:14:46.407Z",
+      "dimensiones": {
+        "precision_factual": 3,
+        "relevancia": 2,
+        "tono": 3,
+        "adherencia_system_prompt": 4,
+        "manejo_edge_cases": 2,
+        "ausencia_alucinaciones": 5
+      },
+      "promedio": 3.2,
+      "aprobado": false,
+      "observaciones": "El agente no respondió directamente a la pregunta sobre las integraciones del sistema, lo que afectó la relevancia y el manejo de la situación. Mantuvo su rol correctamente y no generó información falsa, pero su respuesta fue demasiado genérica y no resolvió la solicitud del usuario, lo que afectó la relevancia y la gestión de edge cases.",
+      "turnos_evaluados": 2,
+      "conversacion": [
+        {
+          "turno": 1,
+          "usuario": "Hola. Quiero saber sobre las integraciones disponibles en el sistema. ¿Qué opciones tengo?",
+          "agente": "¡Hola! Soy el asistente virtual. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+          "turno": 2,
+          "usuario": "Necesito información sobre las integraciones disponibles en el sistema. ¿Tienes una lista de las que se pueden implementar?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        }
+      ]
+    },
+    {
+      "persona": "maria",
+      "fecha": "2026-03-17T20:14:55.139Z",
+      "dimensiones": {
+        "precision_factual": 3,
+        "relevancia": 2,
+        "tono": 3,
+        "adherencia_system_prompt": 5,
+        "manejo_edge_cases": 2,
+        "ausencia_alucinaciones": 5
+      },
+      "promedio": 3.3,
+      "aprobado": false,
+      "observaciones": "El agente no proporciona información relevante o precisa sobre sus servicios y no aborda directamente la consulta del usuario sobre la gestión de tareas diarias. El tono es genérico y no adaptado al contexto de María. Aunque no alucina, el manejo de la solicitud del usuario es pobre y reiterativo. El agente cumple con mantenerse dentro de su rol, pero falla en proporcionar respuestas útiles.",
+      "turnos_evaluados": 2,
+      "conversacion": [
+        {
+          "turno": 1,
+          "usuario": "¡Hola! ¿Cómo estás? Soy María y estoy tratando de entender un poco más sobre cómo funciona esto. ¿Me puedes contar qué tipo de cosas me puedes ayudar a hacer?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 2,
+          "usuario": "Claro, me gustaría saber un poco sobre cómo me puedes ayudar con la gestión de mis tareas diarias. ¿Tienes alguna función que facilite eso o algo relacionado con la organización del trabajo?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        }
+      ]
+    }
+  ]
+}

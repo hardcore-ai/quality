@@ -1,0 +1,115 @@
+{
+  "fecha": "2026-03-18T01:31:55.460Z",
+  "agente_endpoint": "http://localhost:3000/api/agent/chat",
+  "configuracion": {
+    "turnos": 6,
+    "personas": [
+      "carlos",
+      "maria"
+    ]
+  },
+  "resumen": {
+    "total": 2,
+    "aprobados": 0,
+    "reprobados": 2,
+    "promedio_general": "2.9"
+  },
+  "scorecards": [
+    {
+      "persona": "carlos",
+      "fecha": "2026-03-18T01:31:42.136Z",
+      "dimensiones": {
+        "precision_factual": 1,
+        "relevancia": 1,
+        "tono": 3,
+        "adherencia_system_prompt": 4,
+        "manejo_edge_cases": 1,
+        "ausencia_alucinaciones": 5
+      },
+      "promedio": 2.5,
+      "aprobado": false,
+      "observaciones": "El agente no proporcionó ninguna información factual y relevante en relación a las consultas del usuario sobre integraciones y documentación técnica, persistiendo en respuestas genéricas y poco útiles. Aunque mantuvo un tono aceptable, no logró abordar las solicitudes específicas del usuario. Mantuvo su rol sin inventar información incorrecta, pero no manejó adecuadamente la situación de repetidas solicitudes específicas, lo que indica una notable necesidad de mejora en la capacidad de respuesta a consultas técnicas detalladas.",
+      "turnos_evaluados": 6,
+      "conversacion": [
+        {
+          "turno": 1,
+          "usuario": "Hola, necesito información sobre las integraciones disponibles con el sistema. ¿Cuáles son las opciones y limitaciones que debo tener en cuenta?",
+          "agente": "¡Hola! Soy el asistente virtual. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+          "turno": 2,
+          "usuario": "Voy al grano. Necesito saber qué integraciones están disponibles con el sistema y cuáles son las limitaciones técnicas que podría enfrentar al implementar alguna de ellas.",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 3,
+          "usuario": "¿Hay alguna documentación técnica que puedas proporcionarme sobre las integraciones, como API o SDK? También necesito saber si hay limitaciones de compatibilidad con determinadas plataformas.",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 4,
+          "usuario": "Sí, necesito detalles técnicos específicos. ¿Qué tipo de API soporta el sistema y cuáles son los límites de uso, como el número de solicitudes por minuto? También, ¿hay plataformas que no sean compatibles?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 5,
+          "usuario": "Parece que no estoy recibiendo la información que necesito. ¿Puedes darme un resumen de las integraciones y un enlace a la documentación técnica? Quiero aclarar cómo se manejan las limitaciones de las API.",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 6,
+          "usuario": "Necesito respuestas concretas. ¿Hay un documento donde se detallen las integraciones disponibles y las limitaciones de uso de la API? Esto es crucial para lo que estoy desarrollando.",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        }
+      ]
+    },
+    {
+      "persona": "maria",
+      "fecha": "2026-03-18T01:31:55.460Z",
+      "dimensiones": {
+        "precision_factual": 3,
+        "relevancia": 2,
+        "tono": 3,
+        "adherencia_system_prompt": 5,
+        "manejo_edge_cases": 2,
+        "ausencia_alucinaciones": 4
+      },
+      "promedio": 3.2,
+      "aprobado": false,
+      "observaciones": "El agente falla en proporcionar información relevante o responder las preguntas específicas de la usuaria. Aunque mantiene adherencia al system prompt al no desviarse de su rol, sus respuestas son repetitivas y no abordan las consultas planteadas, lo que sugiere un manejo inadecuado de edge cases que lleva a una experiencia frustrante para el usuario. El agente evita alucinaciones al no proporcionar información no verificada, pero esto también contribuye a no responder efectivamente las preguntas. Mejoras necesarias en relevancia y manejo de casos ambiguos y específicos.",
+      "turnos_evaluados": 6,
+      "conversacion": [
+        {
+          "turno": 1,
+          "usuario": "Hola, ¿qué tal? Soy María, y la verdad es que estoy aquí para ver qué puedes hacer por mí. Soy nueva en esto y tengo algunas dudas. ¿Me podrías contar un poco sobre lo que puedes ayudarme?",
+          "agente": "¡Hola! Soy el asistente virtual. ¿En qué puedo ayudarte hoy?"
+        },
+        {
+          "turno": 2,
+          "usuario": "¡Genial! Bueno, tengo un par de preguntas sobre cómo manejar ciertos procesos administrativos. Por ejemplo, ¿qué me recomiendas para llevar un mejor control de los gastos en mi equipo?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 3,
+          "usuario": "Claro, entiendo. A ver, una cosa específica que tengo en mente es cómo implementar un sistema para reportar gastos. ¿Tienes alguna sugerencia o herramienta que pueda facilitar ese proceso?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 4,
+          "usuario": "Vale, parece que no he sido clara. Lo que realmente quiero saber es si tienes recomendaciones sobre plataformas o herramientas específicas que se puedan usar para el control de gastos. ¿Hay algo que tú puedas sugerir o que sepas que funcione bien?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 5,
+          "usuario": "Vaya, parece que estamos atrapados en un bucle aquí. Bueno, quizás podría cambiar de enfoque. ¿Puedes decirme si hay algún tipo de reportes o métricas que debería estar manejando para supervisar mejor el presupuesto de mi equipo? Cualquier orientación sería útil.",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        },
+        {
+          "turno": 6,
+          "usuario": "Parece que estamos en una especie de traba, ¿no? Pero bueno, voy a intentarlo de nuevo. Si no puedes ayudarme con los reportes, ¿qué tal un consejo de cómo establecer un presupuesto efectivo para mi equipo? ¿Tienes algún tip o recurso que puedas recomendarme?",
+          "agente": "Gracias por tu mensaje. He recibido tu consulta. ¿Puedo ayudarte con algo más específico sobre nuestros servicios?"
+        }
+      ]
+    }
+  ]
+}

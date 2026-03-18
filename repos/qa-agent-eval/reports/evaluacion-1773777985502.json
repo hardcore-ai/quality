@@ -1,0 +1,17 @@
+{
+  "fecha": "2026-03-17T20:06:25.502Z",
+  "agente_endpoint": "http://localhost:3000/api/agent/chat",
+  "configuracion": {
+    "turnos": 1,
+    "personas": [
+      "carlos"
+    ]
+  },
+  "resumen": {
+    "total": 0,
+    "aprobados": 0,
+    "reprobados": 0,
+    "promedio_general": 0
+  },
+  "scorecards": []
+}
