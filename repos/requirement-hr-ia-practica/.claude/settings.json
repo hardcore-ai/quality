@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/andrescaicedom/**)",
+      "Bash(npx shadcn@latest add card table badge dialog input textarea select dropdown-menu accordion avatar sheet tabs progress alert label form skeleton sonner separator -y)"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# Claude Code settings (local permissions)
+.claude/settings.local.json
+.claude/projects/
+
+# Cursor y VS Code local
+.cursor/
+.vscode/
+
+# Kiro / AIDLC internal tooling
+.kiro/
+.aidlc-rule-details/
+
+# macOS
+.DS_Store
